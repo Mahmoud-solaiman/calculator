@@ -1,0 +1,16 @@
+//Main theme's colors
+$main-background:#3a4764;
+$toggle-background:#232c43;
+$screen-background: #182034;
+$del-reset:#637097;
+$del-reset-shadow:#404e72;
+$toggle-equal-background:#d03f2f;
+$keys-background:#eae3dc;
+$keys-shadow:#b4a597;
+$numbers-color:#444b5a;
+$text-color:#fff;
+
+body {
+    background:$keys-shadow;
+    color:$toggle-equal-background;
+}

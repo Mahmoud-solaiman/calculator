@@ -1,0 +1,19 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("/static/LeagueSpartan-Bold.ttf");
+}
+body {
+  background: #b4a597;
+  color: #d03f2f;
+}
+
+body {
+  font-family: "League Spartan";
+  font-weight: 100;
+}/*# sourceMappingURL=main.css.map */
