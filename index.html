@@ -7,7 +7,35 @@
     <link rel="stylesheet" href="/sass-styles/main.css">
 </head>
 <body>
-    <h1>Let's try this font out</h1>
+    <div class="container">
+        <div class="app">
+            <!-- The header of the calculator -->
+            <div class="header">
+                <div>
+                    <h1 class="title">calc</h1>
+                </div>
+                <!-- The themes toggler markup -->
+                <div class="themes">
+                    <h2>theme</h2>
+                    <div class="themes-switcher-container">
+                        <div class="themes-switchers">
+                            <label for="theme-1">1</label>
+                            <label for="theme-2">2</label>
+                            <label for="theme-3">3</label>
+                        </div>
+                        <div class="toggle-switcher-container">
+                            <input type="radio" name="theme" id="theme-1">
+                            <input type="radio" name="theme" id="theme-2">
+                            <input type="radio" name="theme" id="theme-3">
+                            <div class="toggle-switcher"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The screen of the calculator -->
+            <div class="screen"></div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

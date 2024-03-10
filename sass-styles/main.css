@@ -8,9 +8,87 @@
   font-family: "League Spartan";
   src: url("/static/LeagueSpartan-Bold.ttf");
 }
-body {
-  background: #b4a597;
-  color: #d03f2f;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #3a4764;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.themes {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-end;
+}
+.themes h2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding-bottom: 2px;
+}
+
+.themes-switchers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle-switcher-container {
+  padding: 0 5px;
+  width: 75px;
+  height: 23px;
+  border-radius: 30px;
+  background-color: #232c43;
+  display: flex;
+  align-items: center;
+}
+.toggle-switcher-container input[type=radio] {
+  display: none;
+}
+.toggle-switcher-container .toggle-switcher {
+  height: 16px;
+  width: 16px;
+  background-color: #d03f2f;
+  border-radius: 50%;
+  translate: 0;
+  transition: 0.25s linear;
+}
+.toggle-switcher-container #theme-1:checked ~ .toggle-switcher {
+  translate: 0;
+}
+.toggle-switcher-container #theme-2:checked ~ .toggle-switcher {
+  translate: 23px;
+}
+.toggle-switcher-container #theme-3:checked ~ .toggle-switcher {
+  translate: 50px;
+  background-color: #00e0d1;
+}
+
+.app {
+  padding-top: 115px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.screen {
+  height: 110px;
+  background-color: #182034;
+  border-radius: 10px;
 }
 
 body {
