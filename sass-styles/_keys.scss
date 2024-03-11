@@ -1,0 +1,45 @@
+.keys-container {
+    display: grid;
+    grid-template-columns:repeat(4, 19%);
+    justify-content: center;
+    background-color:$toggle-background;
+    border-radius:10px;
+    padding:25px 0;
+    gap:20px;
+
+    & .key {
+        border:none;
+        font: {
+            size:1.7rem;
+            weight:700;
+        }
+        padding:10px 0;
+        border-radius:8px;
+        cursor:pointer;
+        color:$numbers-color;
+        background-color:$keys-background;
+        box-shadow:0 3px 0  $keys-shadow;
+        
+        &:hover {
+            opacity:.8;
+        }
+    }
+
+    & .col-2 {
+        grid-column:span 2;
+    }
+
+    & .equal {
+        color:#fff;
+        background-color:$toggle-equal-background;
+        box-shadow:0 3px 0  $equal-shadow;
+    }
+
+    & .reset, .delete {
+        color:#fff;
+        font-size:1.3rem;
+        background-color:$del-reset;
+        box-shadow:0 3px 0  $del-reset-shadow;
+    }
+}
+

@@ -1,5 +1,11 @@
 .screen {
-    height:110px;
+    height:100px;
     background-color:$screen-background;
     border-radius:10px;
+    font-size:2.6rem;
+    color:#fff;
+    padding-right:30px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
