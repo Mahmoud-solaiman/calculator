@@ -102,10 +102,11 @@
   border-radius: 10px;
   font-size: 2.6rem;
   color: #fff;
-  padding-right: 30px;
+  padding-right: 25px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
 }
 
 .keys-container {

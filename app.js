@@ -1,10 +1,10 @@
 //Model
 const resetBtn = document.querySelector('.reset');
-const calcScreen = document.querySelector('.screen');
 const deleteBtn = document.querySelector('.delete');
 const keys = document.querySelectorAll('.key:not(.delete,.reset,.equal')
 const equalBtn = document.querySelector('.equal');
-
+const operations = document.querySelectorAll('.operation');
+const calcScreen = document.querySelector('.screen');
 //View
 
 //Controller
@@ -28,5 +28,5 @@ keys.forEach(key=>{
 });
 
 equalBtn.addEventListener('pointerup', ()=>{
-    const screenValue = Number(calcScreen.textContent);
+    calcScreen.textContent = eval(calcScreen.textContent);
 });
