@@ -25,6 +25,23 @@
         }
     }
 
+    & .key-2 {
+        background-color:$keys-background-2;
+        color:$numbers-color-2;
+        box-shadow:0 3px 0  $keys-shadow-2;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    & .key-3 {
+        background-color:$keys-background-3;
+        color:$numbers-text-color-3;
+        box-shadow:0 3px 0  $keys-shadow-3;
+        &:hover {
+            background-color: $del-reset-shadow-3;
+        }
+    }
+
     & .col-2 {
         grid-column:span 2;
     }
@@ -35,11 +52,44 @@
         box-shadow:0 3px 0  $equal-shadow;
     }
 
+    & .equal-2 {
+        background-color: $toggle-equal-background-2;
+        box-shadow:0 3px 0  $equal-shadow-2;
+    }
+    & .equal-3 {
+        background-color: $toggle-equal-background-3;
+        box-shadow:0 3px 0  $equal-shadow-3;
+    }
+
     & .reset, .delete {
         color:#fff;
         font-size:1.3rem;
         background-color:$del-reset;
         box-shadow:0 3px 0  $del-reset-shadow;
     }
+    & .delete-reset-2 {
+        background-color:$del-reset-2;
+        box-shadow:0 3px 0  $del-reset-shadow-2;
+    }
+    & .delete-reset-3 {
+        background-color:$del-reset-3;
+        box-shadow:0 3px 0  $del-reset-shadow-3;
+    }
 }
 
+.keys-container-2 {
+    background-color: $toggle-background-2;
+}
+.keys-container-3 {
+    background-color: $toggle-screen-background-3;
+}
+
+@media (max-width:500px){
+    .keys-container {
+        & .key {
+            &:hover{
+                opacity:1;
+            }    
+        }
+    }
+}

@@ -77,6 +77,14 @@
   background-color: #00e0d1;
 }
 
+.toggle-switcher-container-2 {
+  background-color: #d1cccc;
+}
+
+.toggle-switcher-container-3 {
+  background-color: #1d0934;
+}
+
 .app {
   padding-top: 115px;
   width: 37%;
@@ -104,9 +112,9 @@
   color: #fff;
   padding-right: 25px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
+  direction: rtl;
 }
 
 .keys-container {
@@ -132,6 +140,22 @@
 .keys-container .key:hover {
   opacity: 0.8;
 }
+.keys-container .key-2 {
+  background-color: #e5e4e1;
+  color: #35352c;
+  box-shadow: 0 3px 0 #a69d91;
+}
+.keys-container .key-2:hover {
+  background-color: #fff;
+}
+.keys-container .key-3 {
+  background-color: #341c4f;
+  color: #ffe53d;
+  box-shadow: 0 3px 0 #bc15f4;
+}
+.keys-container .key-3:hover {
+  background-color: #871c9c;
+}
 .keys-container .col-2 {
   grid-column: span 2;
 }
@@ -140,14 +164,69 @@
   background-color: #d03f2f;
   box-shadow: 0 3px 0 #93261a;
 }
+.keys-container .equal-2 {
+  background-color: #ca5502;
+  box-shadow: 0 3px 0 #893901;
+}
+.keys-container .equal-3 {
+  background-color: #00e0d1;
+  box-shadow: 0 3px 0 #6cf9f2;
+}
 .keys-container .reset, .keys-container .delete {
   color: #fff;
   font-size: 1.3rem;
   background-color: #637097;
   box-shadow: 0 3px 0 #404e72;
 }
+.keys-container .delete-reset-2 {
+  background-color: #377f86;
+  box-shadow: 0 3px 0 #1b5f65;
+}
+.keys-container .delete-reset-3 {
+  background-color: #58077d;
+  box-shadow: 0 3px 0 #871c9c;
+}
 
+.keys-container-2 {
+  background-color: #d1cccc;
+}
+
+.keys-container-3 {
+  background-color: #1d0934;
+}
+
+@media (max-width: 500px) {
+  .keys-container .key:hover {
+    opacity: 1;
+  }
+}
 body {
   font-family: "League Spartan";
   font-weight: 100;
+}
+
+.container-2 {
+  background-color: #e6e6e6;
+}
+
+.container-3 {
+  background-color: #160628;
+}
+
+.black-text {
+  color: #35352c;
+}
+
+.yellow-text {
+  color: #ffe53d;
+}
+
+.screen-2 {
+  background-color: #f5f5f5;
+  color: #35352c;
+}
+
+.screen-3 {
+  background-color: #1d0934;
+  color: #ffe53d;
 }/*# sourceMappingURL=main.css.map */
